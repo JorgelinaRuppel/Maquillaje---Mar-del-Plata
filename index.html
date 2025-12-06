@@ -175,16 +175,57 @@
 
     <section id="contacto">
       <h2>Contacto</h2>
-      <ul>
-        <li>WhatsApp: <a href="https://wa.me/5492901419513" target="_blank" rel="noopener" style="color:var(--acc)">+54 9 ...</a></li>
-        <li>Instagram: <a href="https://www.instagram.com/jorgelina_ruppel/" target="_blank" rel="noopener" style="color:var(--acc)">@TUINSTAGRAM</a></li>
-        <li>Zona: Mar del Plata</li>
-      </ul>
+      <div style="text-align: center; margin-top: 20px;">
+        <p style="margin-bottom: 15px;">Hacé clic en los iconos para contactarme:</p>
+        
+        <a href="https://wa.me/5492901419513" target="_blank" style="text-decoration: none; margin: 0 15px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="50" height="50">
+        </a>
+
+        <a href="https://instagram.com/jorgelina_ruppel" target="_blank" style="text-decoration: none; margin: 0 15px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" width="50" height="50">
+        </a>
+    </div>
     </section>
 
     <footer>
       <p>&copy; 2025 Maquillaje en Mar del Plata. Todos los derechos reservados.</p>
     </footer>
   </div>
+<style>
+    /* 1. Fondo de toda la página: Rosa Piel */
+    body, html {
+        background-color: #fcece8 !important; /* Rosa nude suave */
+        color: #4a3b3b !important; /* Texto Marrón Café */
+        background-image: none !important; /* Elimina cualquier imagen de fondo vieja */
+    }
+
+    /* 2. FORZAR CAJAS BLANCAS (Atacando por ID para ganar al diseño viejo) */
+    section, header, footer, 
+    #servicios, #bioseguridad, #productos, #contacto {
+        background-color: #fffbfb !important; /* Blanco rosado */
+        color: #5e4b4b !important; /* Texto gris/marrón */
+        border: 1px solid #eadadad0 !important;
+        box-shadow: 0 10px 25px rgba(139, 93, 93, 0.1) !important;
+        border-radius: 20px !important;
+    }
+
+    /* 3. Títulos oscuros */
+    h1, h2, h3 {
+        color: #3d2b2b !important; /* Chocolate oscuro */
+    }
+
+    /* 4. Arreglar textos invisibles */
+    p, li, span, div {
+        color: #5e4b4b !important;
+    }
+
+    /* 5. Los botones (Reservar, etc) */
+    .btn, button, a.button {
+        background-color: #d68c92 !important; /* Botón rosa viejo */
+        color: #ffffff !important; /* Texto blanco */
+        border: none !important;
+    }
+</style>
 </body>
 </html>
