@@ -1,36 +1,41 @@
 <!doctype html>
 <html lang="es-AR">
 <style>
-    /* Forzar fondo claro en toda la web */
-    body {
-        background-color: #f8f9fa !important; /* Gris perla muy suave */
-        color: #333333 !important; /* Letra gris oscura (mejor que negro puro) */
+    /* 1. El Fondo: Un tono piel/rosado suave y elegante */
+    body, html {
+        background-color: #fcede8 !important; /* Tono "Blush" o piel suave */
+        color: #4a3b3b !important; /* Texto marrón café oscuro (combina mejor que el negro) */
     }
 
-    /* Las cajas de contenido (Servicios, Bioseguridad, etc.) en blanco puro */
-    section, header, footer, .container, div {
-        background-color: #ffffff !important;
-        border-color: #e0e0e0 !important; /* Bordes suaves */
+    /* 2. Las Cajas (Servicios, etc.): Blanco con un toque cálido */
+    section, header, footer, .container, div.service-card {
+        background-color: #fffbfb !important; /* Blanco con una micro-tinta rosada */
+        border: 1px solid #f2dcd6 !important; /* Borde rosado sutil */
+        box-shadow: 0 5px 15px rgba(163, 114, 114, 0.1) !important; /* Sombra en tono cálido */
+    }
+
+    /* 3. Títulos y Textos: Color Café Intenso para leer bien */
+    h1, h2, h3, h4, h5, h6, strong, b {
+        color: #3d2b2b !important; /* Marrón chocolate oscuro */
     }
     
-    /* Títulos oscuros y elegantes */
-    h1, h2, h3, h4, strong {
-        color: #1a1a1a !important;
+    /* El resto del texto normal */
+    p, li, span, div, td, th {
+        color: #5e4b4b !important; /* Marrón grisáceo suave */
     }
 
-    /* Elementos de lista (los que tienen iconos) */
-    li {
-        color: #444444 !important;
+    /* 4. Enlaces: Un tono terracota o rosa fuerte para resaltar */
+    a:not(.btn):not(.button) {
+        color: #d66d75 !important; /* Rosa viejo intenso */
+        text-decoration: underline;
     }
 
-    /* Botones: Mantenerlos visibles pero ajustar si es necesario */
-    button, .btn, a.button {
-        filter: brightness(1.1); /* Hacerlos un pelín más brillantes */
+    /* 5. Footer: Un tono piel un poco más oscuro para cerrar */
+    footer {
+        background-color: #f7e3de !important;
     }
-
-    /* Footer o pie de página */
     footer p {
-        color: #666666 !important;
+        color: #7a6060 !important;
     }
 </style>
 <head>
