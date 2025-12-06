@@ -1,105 +1,177 @@
 <!doctype html>
 <html lang="es-AR">
-<style>
-    /* 1. El Fondo: Un tono piel/rosado suave y elegante */
-    body, html {
-        background-color: #fcede8 !important; /* Tono "Blush" o piel suave */
-        color: #4a3b3b !important; /* Texto marrón café oscuro (combina mejor que el negro) */
-    }
-
-    /* 2. Las Cajas (Servicios, etc.): Blanco con un toque cálido */
-    section, header, footer, .container, div.service-card {
-        background-color: #fffbfb !important; /* Blanco con una micro-tinta rosada */
-        border: 1px solid #f2dcd6 !important; /* Borde rosado sutil */
-        box-shadow: 0 5px 15px rgba(163, 114, 114, 0.1) !important; /* Sombra en tono cálido */
-    }
-
-    /* 3. Títulos y Textos: Color Café Intenso para leer bien */
-    h1, h2, h3, h4, h5, h6, strong, b {
-        color: #3d2b2b !important; /* Marrón chocolate oscuro */
-    }
-    
-    /* El resto del texto normal */
-    p, li, span, div, td, th {
-        color: #5e4b4b !important; /* Marrón grisáceo suave */
-    }
-
-    /* 4. Enlaces: Un tono terracota o rosa fuerte para resaltar */
-    a:not(.btn):not(.button) {
-        color: #d66d75 !important; /* Rosa viejo intenso */
-        text-decoration: underline;
-    }
-
-    /* 5. Footer: Un tono piel un poco más oscuro para cerrar */
-    footer {
-        background-color: #f7e3de !important;
-    }
-    footer p {
-        color: #7a6060 !important;
-    }
-</style>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Maquillaje a domicilio en Mar del Plata | Social, Novias y Talleres</title>
-  <meta name="google-site-verification" content="5S6y4iznYiKsVnBNGidGfGwLxl-jxOVBHT7cVS0LIsw" />" 
-
+  
+  <meta name="google-site-verification" content="5S6y4iznYiKsVnBNGidGfGwLxl-jxOVBHT7cVS0LIsw" />
   <link rel="canonical" href="https://jmolinaara85-cyber.github.io/maquillaje-mardelplata/" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Maquillaje a domicilio en Mar del Plata" />
   <meta property="og:description" content="Social, novias, quince, egresadas. Taller de automaquillaje. Bioseguridad 100%." />
   <meta property="og:type" content="website" />
 
   <style>
-    :root{--bg:#0b1220;--card:#0f1b33;--txt:#eaf1ff;--mut:#a9b7d6;--acc:#67e8f9;}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#060b14,var(--bg));color:var(--txt);}
-    .wrap{max-width:980px;margin:0 auto;padding:28px;}
-    header{padding:18px 0 10px;display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap;align-items:center}
-    nav a{color:var(--mut);text-decoration:none;margin-right:14px}
-    nav a:hover{color:var(--acc)}
-    .hero{padding:26px;border-radius:18px;background:radial-gradient(800px 400px at 10% 0%,rgba(103,232,249,.18),transparent),var(--card);box-shadow:0 10px 30px rgba(0,0,0,.35)}
-    h1{margin:0 0 10px;font-size:34px;line-height:1.1}
-    .sub{color:var(--mut);margin:0 0 16px;font-size:16px}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
-    .btn{display:inline-block;background:var(--acc);color:#001018;padding:11px 14px;border-radius:12px;font-weight:700;text-decoration:none}
-    .btn.secondary{background:transparent;border:1px solid rgba(103,232,249,.35);color:var(--txt)}
-    section{margin-top:18px;padding:18px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06)}
-    h2{margin:0 0 10px;font-size:20px}
-    ul{margin:10px 0 0;padding-left:18px;color:var(--mut)}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-    @media (max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:28px}}
-    footer{color:var(--mut);font-size:13px;padding:18px 0}
-    .tag{display:inline-block;margin:6px 6px 0 0;padding:7px 10px;border-radius:999px;background:rgba(103,232,249,.10);border:1px solid rgba(103,232,249,.18);color:var(--txt);font-size:13px}
+    /* --- CONFIGURACIÓN DE COLORES --- */
+    :root {
+        --bg-azul: #0b1220;
+        --card-azul: #0f1b33;
+        --rosa-nude: #fcede8;
+        --blanco-rosado: #fffbfb;
+        --texto-marron: #4a3b3b;
+        --texto-claro: #eaf1ff;
+        --acento-rosa: #d66d75;
+    }
+
+    body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background-color: var(--rosa-nude); /* Fondo General ROSA */
+        color: var(--texto-marron);
+    }
+
+    .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 28px;
+    }
+
+    /* --- CABECERA SUPERIOR (Menú) --- */
+    header {
+        padding: 18px 0 10px;
+        display: flex;
+        gap: 12px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    header strong { color: var(--texto-marron); }
+    nav a {
+        color: var(--texto-marron);
+        text-decoration: none;
+        margin-right: 14px;
+        font-weight: 500;
+    }
+    nav a:hover { color: var(--acento-rosa); text-decoration: underline; }
+
+    /* --- SECCIÓN HERO (LA CAJA AZUL) --- */
+    /* Aquí forzamos el texto a BLANCO para que se vea sobre el azul */
+    .hero {
+        padding: 26px;
+        border-radius: 18px;
+        /* Mantenemos el fondo azul original */
+        background: radial-gradient(800px 400px at 10% 0%, rgba(103,232,249,.18), transparent), var(--card-azul);
+        box-shadow: 0 10px 30px rgba(0,0,0,.35);
+        color: white !important; /* Texto blanco forzado */
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        margin: 0 0 10px;
+        font-size: 34px;
+        line-height: 1.1;
+        color: white !important; /* Título blanco */
+    }
+
+    .hero .sub {
+        color: #e0e0e0 !important; /* Subtítulo gris muy claro */
+        margin: 0 0 16px;
+        font-size: 16px;
+    }
+
+    /* Botones principales */
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+    
+    .btn {
+        display: inline-block;
+        background: var(--acento-rosa); /* Botón Rosa */
+        color: white !important;
+        padding: 11px 14px;
+        border-radius: 12px;
+        font-weight: 700;
+        text-decoration: none;
+        border: none;
+    }
+
+    .btn.secondary {
+        background: transparent;
+        border: 1px solid white; /* Borde blanco */
+        color: white !important;
+    }
+
+    /* ETIQUETAS (Novias, Quince, etc.) EN LA ZONA AZUL */
+    .tag {
+        display: inline-block;
+        margin: 6px 6px 0 0;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+        border: 1px solid rgba(255, 255, 255, 0.4); /* Borde blanco sutil */
+        color: white !important; /* Texto blanco */
+        font-size: 13px;
+    }
+
+    /* --- SECCIONES DEL CUERPO (Servicios, etc.) --- */
+    /* Estas son claras con texto marrón */
+    section {
+        margin-top: 30px;
+        padding: 25px;
+        border-radius: 16px;
+        background: var(--blanco-rosado);
+        border: 1px solid #f2dcd6;
+        box-shadow: 0 5px 15px rgba(163, 114, 114, 0.1);
+    }
+
+    h2 {
+        margin: 0 0 15px;
+        font-size: 22px;
+        color: #3d2b2b !important; /* Títulos marrón oscuro */
+    }
+
+    ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+        color: var(--texto-marron); /* Listas marrón */
+    }
+    
+    li { margin-bottom: 8px; }
+
+    /* --- FOOTER --- */
+    footer {
+        color: #7a6060;
+        font-size: 13px;
+        padding: 30px 0;
+        text-align: center;
+    }
+    
+    /* Ajustes para móviles */
+    @media (max-width: 760px) {
+        h1 { font-size: 28px; }
+        .grid { grid-template-columns: 1fr; }
+    }
   </style>
 
-  <!-- LocalBusiness Structured Data -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"BeautySalon",
     "name":"Maquillaje Profesional a Domicilio - Mar del Plata",
     "areaServed":"Mar del Plata, Buenos Aires, AR",
-    "description":"Maquillaje social y profesional a domicilio. Novias, quinceañeras, egresadas, madrinas y eventos. Taller de automaquillaje. Bioseguridad 100%.",
-    "url":"https://jmolinaara85-cyber.github.io/maquillaje-mardelplata/",
-    "sameAs":[
-      "https://www.instagram.com/jorgelina_ruppel/"
-    ],
-    "makesOffer":[
-      {"@type":"Offer","name":"Maquillaje para eventos (a domicilio)"},
-      {"@type":"Offer","name":"Maquillaje de novia"},
-      {"@type":"Offer","name":"Taller de automaquillaje personalizado"},
-      {"@type":"Offer","name":"Colorimetría aplicada al maquillaje"},
-      {"@type":"Offer","name":"Pieles patológicas / perfeccionamiento"}
-    ]
+    "description":"Maquillaje social y profesional a domicilio. Novias, quinceañeras, egresadas. Taller de automaquillaje.",
+    "url":"https://jmolinaara85-cyber.github.io/maquillaje-mardelplata/"
   }
   </script>
 </head>
 
 <body>
   <div class="wrap">
+    
     <header>
-      <div><strong>Maquillaje en Mar del Plata</strong><div style="color:var(--mut);font-size:13px">A domicilio • Social • Novias • Talleres</div></div>
+      <div>
+          <strong>Maquillaje en Mar del Plata</strong>
+          <div style="color:var(--texto-marron); font-size:13px">A domicilio • Social • Novias • Talleres</div>
+      </div>
       <nav>
         <a href="#servicios">Servicios</a>
         <a href="#bioseguridad">Bioseguridad</a>
@@ -111,16 +183,19 @@
     <div class="hero">
       <h1>Maquillaje a domicilio en Mar del Plata</h1>
       <p class="sub">Maquillaje social y profesional con alta durabilidad. Novias, quinceañeras, egresadas, madrinas y eventos. Taller de automaquillaje personalizado.</p>
-<div style="text-align: center; margin: 30px 0;">
-    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
-         alt="Set de maquillaje profesional con brochas y sombras" 
-         style="width: 100%; max-width: 900px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.5);">
-</div>
+      
+      <div style="text-align: center; margin: 30px 0;">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
+             alt="Set de maquillaje profesional" 
+             style="width: 100%; max-width: 900px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.5);">
+      </div>
+
       <div class="cta">
-        <a class="btn" href="https://wa.me/5492901419513?text=Hola!%20Quiero%20consultar%20por%20maquillaje%20a%20domicilio%20en%20Mar%20del%20Plata." target="_blank" rel="noopener">Reservar por WhatsApp</a>
+        <a class="btn" href="https://wa.me/5492901419513?text=Hola!%20Quiero%20consultar%20por%20maquillaje%20a%20domicilio." target="_blank" rel="noopener">Reservar por WhatsApp</a>
         <a class="btn secondary" href="https://www.instagram.com/jorgelina_ruppel/" target="_blank" rel="noopener">Ver trabajos en Instagram</a>
       </div>
-      <div style="margin-top:14px">
+      
+      <div style="margin-top:20px">
         <span class="tag">Maquillaje social</span>
         <span class="tag">Novias</span>
         <span class="tag">Quince</span>
@@ -130,24 +205,24 @@
       </div>
     </div>
 
-   <section id="servicios">
-    <h2>Servicios de Maquillaje</h2>
-    <ul>
-      <li>💍 <strong>Novias, quinceañeras y eventos</strong> (Social y Madrinas)</li>
-      <li>🚗 <strong>Servicio a domicilio</strong> en Mar del Plata</li>
-      <li>🎓 <strong>Taller de automaquillaje</strong> (Personalizado)</li>
-    </ul>
-  </section>
+    <section id="servicios">
+      <h2>Servicios de Maquillaje</h2>
+      <ul>
+        <li>💍 <strong>Novias, quinceañeras y eventos</strong> (Social y Madrinas)</li>
+        <li>🚗 <strong>Servicio a domicilio</strong> en Mar del Plata</li>
+        <li>🎓 <strong>Taller de automaquillaje</strong> (Personalizado)</li>
+      </ul>
+    </section>
 
-  <section id="capacitacion">
-    <h2>Cursos y Capacitación</h2>
-    <ul>
-      <li>💄 <strong>Maquillaje social</strong> (Carrera inicial)</li>
-      <li>🖌️ <strong>Maquillaje profesional</strong> (Nivel avanzado)</li>
-      <li>🛡️ <strong>Perfeccionamiento en pieles patológicas</strong></li>
-      <li>✨ <strong>Capacitación "Piel Blindada"</strong> (Técnicas de resistencia)</li>
-    </ul>
-  </section>
+    <section id="capacitacion">
+      <h2>Cursos y Capacitación</h2>
+      <ul>
+        <li>💄 <strong>Maquillaje social</strong> (Carrera inicial)</li>
+        <li>🖌️ <strong>Maquillaje profesional</strong> (Nivel avanzado)</li>
+        <li>🛡️ <strong>Perfeccionamiento en pieles patológicas</strong></li>
+        <li>✨ <strong>Capacitación "Piel Blindada"</strong> (Técnicas de resistencia)</li>
+      </ul>
+    </section>
 
     <section id="bioseguridad">
       <h2>Bioseguridad</h2>
@@ -159,7 +234,7 @@
 
     <section id="productos">
       <h2>Productos (uso profesional)</h2>
-      <p style="color:var(--mut);margin:0">Alta durabilidad y resistencia. Marcas de referencia:</p>
+      <p style="margin:0 0 10px;">Alta durabilidad y resistencia. Marcas de referencia:</p>
       <ul>
         <li>Lidherma, Idraet, Morphe, Kryolan, Rude Cosmetic, AP Pigments, Maybelline, etc.</li>
       </ul>
@@ -177,70 +252,12 @@
         <a href="https://instagram.com/jorgelina_ruppel" target="_blank" style="text-decoration: none; margin: 0 15px;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" width="50" height="50">
         </a>
-    </div>
+      </div>
     </section>
 
     <footer>
       <p>&copy; 2025 Maquillaje en Mar del Plata. Todos los derechos reservados.</p>
     </footer>
   </div>
-<style>
-    /* 1. Fondo general de la página (Cuerpo) */
-    body, html, #page-wrapper {
-        background-color: #fcece8 !important; /* Rosa nude suave */
-        color: #4a3b3b !important; /* Marrón Café para el contenido general */
-    }
-
-    /* 2. REGLAS ESPECIALES PARA LA CABECERA (Donde está el fondo Azul) */
-    /* Aquí forzamos BLANCO para que se lea bien sobre el azul */
-    header h1, header h2, header p, header span, header strong {
-        color: #ffffff !important; /* Blanco Puro */
-        text-shadow: 0 2px 4px rgba(0,0,0,0.3) !important; /* Sombra suave para leer mejor */
-    }
-
-    /* 3. BOTONES PEQUEÑOS (Etiquetas: Novias, Quince, etc.) */
-    /* Los ponemos con borde y letra blanca para que resalten sobre el azul */
-    header .button, 
-    header .btn-small, 
-    header a[class*="button"]:not(.btn-large) {
-        color: #ffffff !important; /* Texto Blanco */
-        border: 1px solid #ffffff !important; /* Borde Blanco */
-        background-color: rgba(255, 255, 255, 0.1) !important; /* Fondo transparente sutil */
-        margin: 5px !important;
-    }
-
-    /* Efecto al pasar el mouse por los botones pequeños (se ponen blancos) */
-    header .button:hover {
-        background-color: #ffffff !important;
-        color: #000000 !important;
-    }
-
-    /* 4. BOTONES PRINCIPALES (Reservar / Instagram) */
-    /* Estos los mantenemos rellenos de color para llamar la atención */
-    header a[href*="wa.me"], header a[href*="instagram"] {
-        background-color: #d66d75 !important; /* Rosa intenso */
-        color: #ffffff !important; /* Texto blanco */
-        border: none !important;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
-    }
-
-    /* 5. Cajas de contenido (Servicios, Bioseguridad, etc.) */
-    /* Estas siguen con el tema claro/rosa */
-    section, #servicios, #capacitacion, #bioseguridad, #productos, #contacto {
-        background-color: #fffbfb !important; /* Blanco rosado */
-        color: #5e4b4b !important; /* Texto marrón */
-        border: 1px solid #eadadad0 !important;
-        border-radius: 20px !important;
-        padding: 25px !important;
-        box-shadow: 0 10px 25px rgba(139, 93, 93, 0.1) !important;
-    }
-
-    /* 6. Títulos internos (fuera del header) */
-    section h2, section h3 { color: #3d2b2b !important; }
-    
-    /* 7. Navegación (Menú arriba a la derecha) */
-    nav a { color: #ffffff !important; } /* Menú en blanco también */
-
-</style>
 </body>
 </html>
