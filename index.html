@@ -188,49 +188,49 @@
     /* 1. Fondo general rosa piel */
     body, html {
         background-color: #fcece8 !important;
-        color: #4a3b3b !important;
+        color: #4a3b3b !important; /* Marrón Café Base */
     }
 
-    /* 2. SOLUCIÓN AL FONDO OSCURO REBELDE */
-    /* Esto obliga al encabezado (donde está la foto) a soltar el color negro */
-    header, div, section {
-        background-color: transparent !important; /* Quita el fondo negro */
-        background-image: none !important;
-        color: #4a3b3b !important; /* Fuerza el texto a ser oscuro */
+    /* 2. REGLA MAESTRA PARA LA CABECERA (Header) */
+    /* Esto iguala el color del menú y del texto del título/descripción */
+    header, header h1, header p, header a, nav a {
+        color: #4a3b3b !important; /* El mismo marrón oscuro para todo */
+        background-color: transparent !important; /* Sin fondos raros */
+        text-shadow: none !important; /* Quita sombras viejas */
     }
 
-    /* 3. Las Cajas de contenido (Servicios, Cursos, etc.) en blanco rosado */
+    /* 3. Las etiquetas/botones pequeños (Social, Novias, Quince...) */
+    /* Los hacemos parecer "chips" o etiquetas sutiles del mismo color */
+    header .button, header .btn-small, header a[class*="button"] {
+        color: #4a3b3b !important; 
+        border: 1px solid #4a3b3b !important; /* Borde del mismo color */
+        background-color: transparent !important;
+        margin: 5px !important;
+        opacity: 0.9 !important;
+    }
+    
+    /* Excepción: Los Botones Principales (Reservar / Ver trabajos) los dejamos rellenos para que destaquen */
+    header a.btn-large, header .actions a {
+        background-color: #d66d75 !important; /* Rosa intenso */
+        color: #ffffff !important; /* Texto blanco */
+        border: none !important;
+    }
+
+    /* 4. Cajas de contenido (Servicios, etc.) */
     #servicios, #capacitacion, #bioseguridad, #productos, #contacto {
         background-color: #fffbfb !important;
         border: 1px solid #eadadad0 !important;
         border-radius: 20px !important;
         padding: 25px !important;
-        margin-bottom: 30px !important;
         box-shadow: 0 10px 25px rgba(139, 93, 93, 0.1) !important;
     }
+    
+    /* 5. Títulos internos */
+    h2, h3 { color: #3d2b2b !important; }
+    
+    /* 6. Listas y párrafos generales */
+    li, p, span { color: #5e4b4b !important; }
 
-    /* 4. Arreglar los BOTONES (para que no desaparezcan) */
-    /* Les damos un color rosa fuerte sólido para que resalten sobre el fondo claro */
-    .btn, button, a.button, a[class*="btn"] {
-        background-color: #d66d75 !important; /* Rosa intenso */
-        color: #ffffff !important; /* Letra blanca */
-        border: none !important;
-        text-shadow: none !important;
-        font-weight: bold !important;
-        padding: 10px 20px !important;
-        border-radius: 50px !important; /* Botones redonditos */
-        display: inline-block !important; /* Asegura que mantengan su forma */
-    }
-
-    /* 5. Títulos oscuros */
-    h1, h2, h3 {
-        color: #3d2b2b !important;
-    }
-
-    /* 6. Textos generales */
-    p, li, span {
-        color: #5e4b4b !important;
-    }
 </style>
 </body>
 </html>
