@@ -185,62 +185,61 @@
     </footer>
   </div>
 <style>
-    /* 1. Fondo general rosa piel para toda la web */
-    body, html, #page-wrapper, .wrapper {
+    /* 1. Fondo general de la página (Cuerpo) */
+    body, html, #page-wrapper {
         background-color: #fcece8 !important; /* Rosa nude suave */
-        color: #4a3b3b !important; /* Marrón Café Base */
-        background-image: none !important; /* Elimina texturas viejas */
+        color: #4a3b3b !important; /* Marrón Café para el contenido general */
     }
 
-    /* 2. ELIMINAR EL CUADRO AZUL OSCURO (HEADER) */
-    /* Hacemos que la cabecera sea transparente para que se vea el rosa de fondo */
-    header, #header, .style1, div[class*="wrapper"] {
-        background-color: transparent !important;
-        background-image: none !important;
-        border: none !important;
-        box-shadow: none !important;
+    /* 2. REGLAS ESPECIALES PARA LA CABECERA (Donde está el fondo Azul) */
+    /* Aquí forzamos BLANCO para que se lea bien sobre el azul */
+    header h1, header h2, header p, header span, header strong {
+        color: #ffffff !important; /* Blanco Puro */
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3) !important; /* Sombra suave para leer mejor */
     }
 
-    /* 3. UNIFICAR COLOR DE TEXTO (Título y Descripción) */
-    /* Todo el texto de arriba será del mismo color que el menú */
-    header h1, header p, header span, header strong {
-        color: #5e4b4b !important; /* El color exacto de "Servicios" */
-        text-shadow: none !important;
+    /* 3. BOTONES PEQUEÑOS (Etiquetas: Novias, Quince, etc.) */
+    /* Los ponemos con borde y letra blanca para que resalten sobre el azul */
+    header .button, 
+    header .btn-small, 
+    header a[class*="button"]:not(.btn-large) {
+        color: #ffffff !important; /* Texto Blanco */
+        border: 1px solid #ffffff !important; /* Borde Blanco */
+        background-color: rgba(255, 255, 255, 0.1) !important; /* Fondo transparente sutil */
+        margin: 5px !important;
     }
 
-    /* 4. BOTONES PEQUEÑOS (Etiquetas: Novias, Quince, etc.) */
-    /* Los transformamos en etiquetas elegantes con borde fino */
-    header ul.actions li a.button, 
-    header .button.small, 
-    header .btn-small,
-    a[class*="button"] {
-        background-color: transparent !important; /* Fondo transparente */
-        color: #5e4b4b !important; /* Texto Marrón */
-        border: 1px solid #a38585 !important; /* Borde sutil */
-        box-shadow: none !important;
+    /* Efecto al pasar el mouse por los botones pequeños (se ponen blancos) */
+    header .button:hover {
+        background-color: #ffffff !important;
+        color: #000000 !important;
     }
 
-    /* 5. EXCEPCIÓN: Los Botones Principales (Reservar / Ver trabajos) */
-    /* Estos SÍ los queremos rellenos para que llamen la atención */
+    /* 4. BOTONES PRINCIPALES (Reservar / Instagram) */
+    /* Estos los mantenemos rellenos de color para llamar la atención */
     header a[href*="wa.me"], header a[href*="instagram"] {
         background-color: #d66d75 !important; /* Rosa intenso */
         color: #ffffff !important; /* Texto blanco */
         border: none !important;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
     }
 
-    /* 6. Cajas de contenido (Servicios, etc.) */
+    /* 5. Cajas de contenido (Servicios, Bioseguridad, etc.) */
+    /* Estas siguen con el tema claro/rosa */
     section, #servicios, #capacitacion, #bioseguridad, #productos, #contacto {
-        background-color: #fffbfb !important;
+        background-color: #fffbfb !important; /* Blanco rosado */
+        color: #5e4b4b !important; /* Texto marrón */
         border: 1px solid #eadadad0 !important;
         border-radius: 20px !important;
         padding: 25px !important;
         box-shadow: 0 10px 25px rgba(139, 93, 93, 0.1) !important;
     }
+
+    /* 6. Títulos internos (fuera del header) */
+    section h2, section h3 { color: #3d2b2b !important; }
     
-    /* 7. Colores generales para el resto de la página */
-    h2, h3 { color: #3d2b2b !important; }
-    li, p { color: #5e4b4b !important; }
-    nav a { color: #5e4b4b !important; } /* Asegura que el menú sea igual */
+    /* 7. Navegación (Menú arriba a la derecha) */
+    nav a { color: #ffffff !important; } /* Menú en blanco también */
 
 </style>
 </body>
